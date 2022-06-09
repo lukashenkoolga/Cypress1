@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testfirefox": "npx cypress run -b firefox --headed -C cypress.env.json",
+    "testfirefoxheadless": "npx cypress run -b firefox",
+    "testedge": "npx cypress run -b edge --headed -C cypress.json",
+    "testedgeheadless": "npx cypress run -b edge"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "start-server-and-test": "^1.14.0"
+  },
+  "dependencies": {
+    "cypress": "^10.0.3"
+  }
+}
