@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "testfirefox": "npx cypress run -b firefox --headed -C cypress.env.json",
-    "testfirefoxheadless": "npx cypress run -b firefox",
-    "testedge": "npx cypress run -b edge --headed -C cypress.json",
-    "testedgeheadless": "npx cypress run -b edge"
+    "testChrome":"npx cypress run --browser chrome --headless",
+    "testFirefox": "npx cypress run --browser firefox --headless",
+    "testChromeMobile": "npx cypress run -b chrome --env viewportWidth=390,viewportHeight=844",
+    "testFirefoxMobile": "npx cypress run -b firefox --env viewportWidth=390,viewportHeight=844"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +15,6 @@
   },
   "dependencies": {
     "cypress": "^10.0.3"
-  }
+  },
+  "description": ""
 }
